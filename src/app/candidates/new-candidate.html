@@ -1,0 +1,62 @@
+
+<div class="box">
+    <ol class="breadcrumb">
+        <li>
+            <i class="fa fa-dashboard"></i> <a href="/">Dashboard</a></li>
+        <li class="active"><i class="fa fa-table"></i><a ui-sref="candidates">My Candidates</a></li>
+        <li class="active"><i class="fa fa-table"></i> Submit New Candidate </li>
+    </ol>
+    <div class="columns">
+      <div class="column is-5">
+
+          <p class="control">
+            <input class="input" type="text" placeholder="Start typing relevant opening">
+          </p>
+            <p class="control">
+            <input autocomplete="on" class="input" type="text" placeholder="Find the candidate">
+          </p>
+<!-- 
+          <p class="control">
+              <button class="button is-info" style="padding: 5px;" ng-click="showDiv=true" ng-show="!showDiv">Not found?</button>
+            </p> -->
+         <p class="control">
+              <button class="button is-info" style="padding: 5px;" ng-click="someMethod()">Not found?</button>
+            </p> 
+            <div ng-repeat="field in fields">
+              <p class="control has-icon">
+              <input class="input" type="{{ field.type }}" placeholder="{{ field.placeholder }}">
+              <i class="{{ field.icon }}"></i>
+              </p>
+            </div>
+  
+
+
+          <p class="control has-addons">
+            <span class="select">
+              <select>
+                <option>$</option>
+                <option>₴</option>
+                <option>€</option>
+              </select>
+            </span>
+            <input class="input" type="text" placeholder="Desired Salary">
+          </p>
+
+            <p class="control" ng-show="AddInfoStatus">
+              <textarea class="textarea" placeholder="Additional Information"></textarea>
+            </p>
+</div>
+            <p class="control">
+              <button class="button is-info" style="padding: 5px;">Submit</button>
+              <button class="button is-link" ui-sref="candidates"> Cancel</button>
+            </p>
+          </div>
+
+
+      <div class="column is-5">
+                    <div class="box">
+            <div action="#" class="dropzone" options="dzOptions" callbacks="dzCallbacks" methods="dzMethods" ng-dropzone style="border: dashed; color: 3399FF"></div>
+          </div>
+      </div>
+    </div>
+</div>

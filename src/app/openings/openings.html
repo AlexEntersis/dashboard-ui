@@ -1,0 +1,39 @@
+<div class="box">
+            <ol class="breadcrumb">
+                <li>
+                    <i class="fa fa-dashboard"></i> <a href="/">Dashboard</a>
+                </li>
+                <li class="active">
+                    <i class="fa fa-table"></i> Openings 
+                </li>
+            </ol>
+            <h2>My Openings <button ui-sref="new-opening.stepOne" type="button" class="button is-info">Add Opening</button></h2>
+
+     
+      <div ng-repeat="position in positions" ng-class="tile" style="display: table-cell; padding: 5px; width: 800px">
+            <div class="card is-fullwidth">
+                <header class="card-header">
+                    <p class="card-header-title">
+                        {{ position.position_title }}
+                    </p>
+                    <a class="card-header-icon">
+                        <i class="fa fa-angle-down"></i>
+                    </a>
+                </header>
+                <div class="card-content">
+                    <div class="content">
+                        {{ position.position_company }}
+                        <br>
+                        <small>{{ position.position_location }}</small>
+
+                        
+                    </div>
+                </div>
+                    <footer class="card-footer">
+                    <a class="card-footer-item" ui-sref="new-opening.stepOne">Edit</a>
+                    <a class="card-footer-item">Delete</a>
+                  </footer>
+            </div>
+        </div>
+        </div>
+</div>

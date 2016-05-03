@@ -1,0 +1,47 @@
+
+<div class="box">
+            <ol class="breadcrumb">
+                <li>
+                    <i class="fa fa-dashboard"></i> <a href="/">Dashboard</a>
+                </li>
+                <li class="active">
+                    <i class="fa fa-table"></i> My Candidates 
+                </li>
+            </ol>
+            <h2>My Candidates <button type="button" ui-sref="new-candidate" class="button is-info">Submit New Candidate</button>
+            </h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Company</th>
+                            <th>Submission Date</th>
+                            <th>Profile</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tr ng-repeat="profile in profiles" style="padding: 5px" style="padding-bottom: 3px">
+                            <td>{{ profile.name }} </td>
+                            <td>{{ profile.position }} </td>
+                            <td>{{ profile.company }} </td>
+                            <td>16 April</td>
+                            <td>
+                                <p class="control has-icon">
+                                    <i class="fa fa-linkedin"></i>
+                                </p>
+                            </td>
+                             <td>{{ profile.status }}</td>
+                            </tr>
+                    </table>
+                    </div>
+
+
+
+                            
+
+
+
+
+
+

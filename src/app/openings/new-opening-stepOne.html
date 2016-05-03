@@ -1,0 +1,63 @@
+
+<div class="box">
+    <ol class="breadcrumb">
+        <li>
+            <i class="fa fa-dashboard"></i> <a href="/">Dashboard</a></li>
+        <li class="active"><i class="fa fa-table"></i><a ui-sref="openings"> Openings</a></li>
+        <li class="active"><i class="fa fa-table"></i> New Opening </li>
+    </ol>
+
+
+<div id="status-buttons" class="text-center">
+                <a ui-sref="new-opening.stepOne"><span>1</span> General</a>
+                <a ui-sref="new-opening.stepTwo"><span>2</span> Team</a>
+            </div>
+
+    <div class="columns">
+      <div class="column is-5">
+
+          <p class="control">
+            <input class="input" type="text" placeholder="Position Title" ng-model="formData.position_title">
+          </p>
+
+          <p class="control has-icon">
+            <input class="input" type="text" placeholder="Company" ng-model="formData.position_company">
+            <i class="fa fa-building-o"></i>
+          </p>
+
+           <p class="control has-icon">
+            <input class="input" type="text" placeholder="Location" ng-model="formData.position_location">
+            <i class="fa fa-location-arrow"></i>
+          </p>
+
+
+            <p class="control has-icon">
+            <input class="input" type="text" placeholder="Required English Level" ng-model="formData.position_english">
+            <i class="fafa-language"></i>
+          </p>
+
+          <p class="control has-addons">
+            <span class="select">
+              <select ng-model="formData.position_salary_currency">
+                <option>$</option>
+                <option>₴</option>
+                <option>€</option>
+              </select>
+            </span>
+            <input class="input" type="text" placeholder="Salary Range" ng-model="formData.position_salary">
+          </p>
+          </div>
+      <div class="column is-5">
+            <p class="control">
+              <textarea class="textarea" placeholder="Job Description" ng-model="formData.position_description"></textarea>
+            </p>
+      </div>
+      </div>
+<a ui-sref="new-opening.stepTwo" class="button is-primary" style="display:block; margin: 0 auto;">
+  <span class="icon">
+    <i class="fa fa-arrow-right"></i>
+  </span>
+  <span>Next Step</span>
+</a>
+   </div>
+

@@ -1,0 +1,41 @@
+.acme-navbar-text{
+  color: white;
+}
+
+a {
+  color: black;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+  line-height: 1.25em;
+}
+
+#dashboard-sidebar {
+	padding-right: 0;
+	display: table-cell;
+	position: fixed;
+	background: #3ca2e0;
+	height: 100%;
+}
+
+@media screen and (min-width: 700px)
+{
+	.fuck {
+	color: red;
+	}
+}
+
+.navigation-link > a  {
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: white;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+	background: #2698dd;
+}
+
+
+
+
